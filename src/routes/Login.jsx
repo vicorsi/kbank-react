@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LoginView from '../views/Login/LoginView';
 import SignUp from '../views/Login/SignUpView';
 
@@ -46,8 +46,8 @@ export default function Login() {
     } 
 
     if (view == 'login') {
-        return <LoginView onButtonClicked={login} onViewChange={() => setView('signup')} dadosLogin={dadosLogin} onInputChange={handleInputChange}/>
+        return <LoginView onButtonClicked={login} onViewChange={() => setView('login')} dadosLogin={dadosLogin} onInputChange={handleInputChange}/>
     } else {
-        return <SignUp onButtonClicked={sign} onViewChange={() => setView('login')} dadosSign={dadosSign} onInputChange={handleInputChange} />
+        return <SignUp onButtonClicked={sign} onViewChange={() => setView('sign')} dadosSign={dadosSign} onInputChange={handleInputChange} />
     }
 }
