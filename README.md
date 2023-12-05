@@ -1,5 +1,3 @@
 # KorsiBank Front End
 
-React
-Vite
-Tailwind
+Projeto Integrador Curso Técnico Desenvolvimento de Sistemas.
